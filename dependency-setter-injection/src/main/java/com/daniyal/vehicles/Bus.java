@@ -1,8 +1,7 @@
 package com.daniyal.vehicles;
 
 public class Bus implements Vehicle{
-    DiscountService discountService;
-
+    private DiscountService discountService;
     public void setDiscountService(DiscountService discountService) {
         this.discountService = discountService;
     }
