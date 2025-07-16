@@ -3,6 +3,16 @@ package com.daniyal.vehicles;
 public class Car implements Vehicle{
     DiscountService discountService;
     private String brandName;
+    private double maximumRetailPrice;
+
+    public double getMaximumRetailPrice() {
+        return maximumRetailPrice;
+    }
+
+    public void setMaximumRetailPrice(double maximumRetailPrice) {
+        this.maximumRetailPrice = maximumRetailPrice;
+    }
+
     public void setDiscountService(DiscountService discountService) {
         this.discountService = discountService;
     }
