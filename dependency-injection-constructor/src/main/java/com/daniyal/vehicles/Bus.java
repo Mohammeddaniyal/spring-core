@@ -6,4 +6,9 @@ public class Bus implements Vehicle{
     public String getMileage() {
         return "20 kmpl";
     }
+
+    @Override
+    public String getDiscountMessage() {
+        return this.discountService.getDiscountMessage();
+    }
 }
