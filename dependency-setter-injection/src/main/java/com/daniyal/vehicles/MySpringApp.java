@@ -11,6 +11,7 @@ public class MySpringApp {
         System.out.println(car.getMileage());
         System.out.println(car.getDiscountMessage());
         System.out.println(car.getBrandName());
+        System.out.println(car.getMaximumRetailPrice());
     }
 
 }

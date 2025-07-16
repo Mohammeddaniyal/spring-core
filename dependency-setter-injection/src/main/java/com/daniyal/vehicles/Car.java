@@ -3,19 +3,7 @@ package com.daniyal.vehicles;
 public class Car implements Vehicle{
     DiscountService discountService;
     private String brandName;
-    private double maximumRetailPrice;
-
-    public double getMaximumRetailPrice() {
-        return maximumRetailPrice;
-    }
-
-    public void setMaximumRetailPrice(double maximumRetailPrice) {
-        this.maximumRetailPrice = maximumRetailPrice;
-    }
-
-    public void setDiscountService(DiscountService discountService) {
-        this.discountService = discountService;
-    }
+    private Double maximumRetailPrice;
 
     public Car()
     {
@@ -25,6 +13,18 @@ public class Car implements Vehicle{
     }
 
     public Car(DiscountService discountService) {
+        this.discountService = discountService;
+    }
+
+    public Double getMaximumRetailPrice() {
+        return maximumRetailPrice;
+    }
+
+    public void setMaximumRetailPrice(double maximumRetailPrice) {
+        this.maximumRetailPrice = maximumRetailPrice;
+    }
+
+    public void setDiscountService(DiscountService discountService) {
         this.discountService = discountService;
     }
 
