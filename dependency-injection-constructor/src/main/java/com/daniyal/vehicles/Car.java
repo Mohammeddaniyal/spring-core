@@ -6,4 +6,9 @@ public class Car implements Vehicle{
     public String getMileage() {
         return "30 kmpl";
     }
+
+    @Override
+    public String getDiscountMessage() {
+        return this.discountService.getDiscountMessage();
+    }
 }
