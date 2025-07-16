@@ -14,6 +14,6 @@ public class Bus implements Vehicle{
 
     @Override
     public String getDiscountMessage() {
-        return this.discountService.getDiscountMessage();
+        return "Bus : "+this.discountService.getDiscountMessage();
     }
 }
