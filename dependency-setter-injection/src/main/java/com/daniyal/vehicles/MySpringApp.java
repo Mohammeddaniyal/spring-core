@@ -7,9 +7,10 @@ public class MySpringApp {
     public static void main(String args[])
     {
         ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("config.xml");
-        Vehicle vehicle=context.getBean("myVehicle", Vehicle.class);
-        System.out.println(vehicle.getMileage());
-        System.out.println(vehicle.getDiscountMessage());
+        Car car= (Car) context.getBean("myVehicle", Car.class);
+        System.out.println(car.getMileage());
+        System.out.println(car.getDiscountMessage());
+        System.out.println(car.getBrandName());
     }
 
 }
