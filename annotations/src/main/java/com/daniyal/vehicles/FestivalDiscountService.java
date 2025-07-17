@@ -6,6 +6,6 @@ import org.springframework.stereotype.Component;
 public class FestivalDiscountService implements DiscountService{
     @Override
     public String getDiscountMessage() {
-        return "1% for todays' festival";
+        return "1% for today's festival";
     }
 }
