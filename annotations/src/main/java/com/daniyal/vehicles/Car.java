@@ -1,6 +1,7 @@
 package com.daniyal.vehicles;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 // here in this case without annotation value
@@ -9,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class Car implements Vehicle{
 private DiscountService discountService;
 // constructor injection via @Autowired
-    Car(@Autowired DiscountService discountService)
+    Car(@Autowired @Qualifier("festivalDiscountService") DiscountService discountService)
     {
         this.discountService=discountService;
     }
