@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 
 public class Car implements Vehicle{
     private DiscountService discountService;
-    @Value("{car.mrp}")
+    @Value("${car.mrp}")
     private int mrp;
     public Car(DiscountService discountService) {
         this.discountService = discountService;
