@@ -1,6 +1,7 @@
 package com.daniyal.vehicles;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 // spring theory if class name first and second letter are both upper case
@@ -13,6 +14,7 @@ public class THAR implements Vehicle{
     // showing injection using @Autowired
     // field injection
     @Autowired
+    @Qualifier("WWEDiscountService")
     private DiscountService discountService;
 
     @Override
