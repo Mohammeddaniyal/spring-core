@@ -10,7 +10,8 @@ import org.springframework.stereotype.Component;
 public class Car implements Vehicle{
 private DiscountService discountService;
 // constructor injection via @Autowired
-    Car(@Autowired @Qualifier("festivalDiscountService") DiscountService discountService)
+@Autowired
+public Car(@Qualifier("festivalDiscountService") DiscountService discountService)
     {
         this.discountService=discountService;
     }
