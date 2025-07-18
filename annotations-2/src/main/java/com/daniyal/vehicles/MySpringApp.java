@@ -10,5 +10,6 @@ public class MySpringApp {
         Car vehicle=context.getBean("carr",Car.class);
         System.out.println(vehicle.getMileage());
         System.out.println(vehicle.getDiscountMessage());
+        System.out.println(vehicle.getMrp());
     }
 }
