@@ -1,6 +1,7 @@
 package com.daniyal.vehicles;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component("MyDearBus")
@@ -9,6 +10,7 @@ private DiscountService discountService;
 // setter injection via @Autowired annotation
 
     @Autowired
+    @Qualifier("festivalDiscountService")
     public void setDiscountService(DiscountService discountService) {
         this.discountService = discountService;
     }
