@@ -1,5 +1,8 @@
 package com.daniyal.vehicles;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class WWEDiscountService implements DiscountService{
     @Override
     public String getDiscountMessage() {
