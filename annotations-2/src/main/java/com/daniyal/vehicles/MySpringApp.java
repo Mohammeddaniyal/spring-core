@@ -7,7 +7,8 @@ public class MySpringApp {
     public static void main(String[] args)
     {
         AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(Config.class);
-        Vehicle vehicle=context.getBean("car",Vehicle.class);
+        Car vehicle=context.getBean("carr",Car.class);
         System.out.println(vehicle.getMileage());
+        System.out.println(vehicle.getDiscountMessage());
     }
 }
