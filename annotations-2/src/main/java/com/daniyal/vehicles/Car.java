@@ -1,11 +1,11 @@
 package com.daniyal.vehicles;
 
-import org.springframework.stereotype.Component;
-
+import org.springframework.beans.factory.annotation.Value;
 
 public class Car implements Vehicle{
     private DiscountService discountService;
-
+    @Value("{car.mrp}")
+    private int mrp;
     public Car(DiscountService discountService) {
         this.discountService = discountService;
     }
@@ -18,5 +18,9 @@ public class Car implements Vehicle{
     @Override
     public String getDiscountMessage() {
         return "Car : "+this.discountService.getDiscountMessage();
+    }
+
+    public int getMrp() {
+        return mrp;
     }
 }
